@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 300;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #85f798;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+header p.menu {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+.arrow {
+  height: 15px;
+  width: 15px;
+  border: 1px solid white;
+  border-width: 4px 4px 0 0;
+  transform: rotate(135deg);
+  margin-left: 20px;
+}
+
+.arrow:hover {
+}
+
+/* ALBUM COVER */
+.album-cover {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.album-cover img {
+  width: 100%;
+}
+
+/* TRACK INFO */
+.track-info {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: 600;
+  top: -40%;
+  padding-left: 5px;
+}
+
+.artist {
+  position: absolute;
+  top: 10%;
+  padding-left: 5px;
+}
+
+.like-button {
+  position: absolute;
+  font-size: 1.3em;
+  left: 99%;
+  top: 50%;
+  transform: translate(-99%, -50%);
+}
+
+/* PROGRESS BAR */
+.music-player {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 5px;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  height: 5px;
+  background: white;
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.fill {
+  position: absolute;
+  height: 5px;
+  border-radius: 10px;
+  background: white;
+  width: 30%;
+}
+
+/* CONTROL BUTTONS */
+.control-buttons {
+  height: 50px;
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-buttons img {
+  filter: invert(100%);
+}
+
+.shuffle img,
+.repeat img {
+  width: 15px;
+}
+
+.back img,
+.next img {
+  width: 30px;
+}
+
+.play img {
+  width: 50px;
+}

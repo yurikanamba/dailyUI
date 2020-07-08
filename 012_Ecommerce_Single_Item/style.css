@@ -1,0 +1,269 @@
+/* RESET STYLING */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CUSTOM STYLING STARTS HERE */
+
+*,
+*::before,
+*::after {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 0;
+}
+
+header a.logo {
+  font-size: 7em;
+  font-style: italic;
+}
+
+header a.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div.search p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+hr {
+  width: 100px;
+  color: black;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.7em;
+  width: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.shopping-cart {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+/* PRODUCT IMAGES */
+.gallery {
+  width: 49%;
+}
+
+.gallery img {
+  width: 100%;
+  padding: 10px;
+}
+
+/* PRODUCT INFORMATION */
+.product-information {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#product-name {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.product-information div.price {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+#productid {
+  font-size: 0.8em;
+  margin: 20px 0px;
+}
+
+.product-information div.product-description {
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.product-information hr {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.product-information div.size-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.size-selector a {
+  padding: 10px;
+}
+
+.size-selector a:hover {
+  background-color: lightslategray;
+}
+
+.product-information a.add-product {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  margin-top: 15px;
+}

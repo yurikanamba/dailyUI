@@ -1,0 +1,249 @@
+/*SET UP STYLE*/
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  color: #535353;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /*grid-template-rows: 1fr 3fr 5fr 1fr 7fr 5fr 1fr 1fr*/
+}
+
+header,
+section,
+footer {
+  margin: 0;
+  padding: 1px;
+}
+
+a:link {
+  color: #535353;
+  text-weight: bold;
+  text-decoration: none;
+}
+
+hr {
+  width: 95%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  background-color: #eeeeee;
+}
+
+/*HEADER*/
+header {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*SIGN-UP FORM*/
+.signup-form {
+  padding: 20px 20px;
+  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.signup-form > h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.signup-form > form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form p {
+  color: white;
+  margin: 0 0 0 15px;
+}
+
+.signup-form input {
+  padding: 12px;
+  margin: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup-form input[type="submit"] {
+  margin-top: 15px;
+  color: #457c7e;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.signup-form input[type="submit"]:hover {
+  background-color: #e4942f;
+}
+
+/*WELCOME BLOCK*/
+.welcome {
+  /*display: flex;
+    flex-direction: column;*/
+  display: grid;
+  align-itmes: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 2em;
+  padding: 30px 30px;
+}
+
+.welcome img {
+  justify-self: center;
+  align-self: center;
+}
+
+.welcome h2 {
+  margin-bottom: 7px;
+}
+
+.welcome p {
+  color: #535353;
+  line-height: 1.7;
+}
+
+/*QUOTE BLOCK*/
+.quote p {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  color: #535353;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*MARKETING BLOCK*/
+.marketing {
+  padding: 30px 30px 0px 30px;
+  display: grid;
+  align-itmes: center;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 2em;
+}
+
+.marketing img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.marketing h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #eebc53;
+  margin-top: 5px;
+}
+
+.marketing p {
+  line-height: 1.7;
+  text-align: center;
+}
+
+/*COUNTDOWN BLOCK*/
+.countdown {
+  padding: 30px 30px 30px 30px;
+}
+
+.countdown h2 {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  align-itmes: center;
+  grid-gap: 0.5em;
+}
+
+.unit {
+  position: relative;
+  /*margin: 10px auto;*/
+  background-color: #eebc53;
+  border-radius: 4px;
+  height: 100px;
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.unit p {
+  position: absolute;
+  color: black;
+  transform: translate(-50%, -65%);
+  left: 50%;
+  top: 65%;
+}
+
+.value {
+  position: absolute;
+  background-color: white;
+  color: black;
+  font-size: 1.8em;
+  border-radius: 4px;
+  left: 50%;
+  top: 20%;
+  width: 95%;
+  height: 50px;
+  padding-top: 11px;
+  transform: translate(-50%, -20%);
+}
+
+/*LEARN MORE BLOCK*/
+.website {
+  margin: 10px 0;
+}
+
+.link {
+  background-color: #eebc53;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 4px;
+  color: white;
+}
+
+.link:hover {
+  background-color: #535353;
+}
+
+.link p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/*FOOTER*/
+footer {
+}
+
+footer p {
+  color: black;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social img {
+  width: 28px;
+  margin: 5px;
+}

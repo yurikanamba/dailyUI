@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* HEADER */
+.logo {
+  font-size: 3em;
+  color: black;
+  font-weight: 900;
+}
+
+.arrow {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #f7858a;
+  border-width: 4px 4px 0 0;
+  transform: rotate(225deg);
+  margin-left: 25px;
+  position: relative;
+  bottom: 37px;
+}
+
+.arrow:hover {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #cccccc;
+  border-width: 4px 4px 0 0;
+  transform: rotate(225deg);
+  margin-left: 25px;
+  position: relative;
+  bottom: 37px;
+  cursor: pointer;
+}
+
+/* PROFILE PICTURE */
+.profile-picture {
+  width: 100%;
+  height: 100px;
+}
+
+.profile-circle {
+  background-image: linear-gradient(to right, #f7858a, #f7b985);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-picture p {
+  position: relative;
+  bottom: 86px;
+  font-weight: 600;
+}
+
+.profile-picture p:hover {
+  cursor: pointer;
+}
+
+/* PROFILE */
+
+.edit-profile h1 {
+  font-weight: 600;
+  margin: 30px 0 5px 0;
+}
+
+.edit-profile h2 {
+  margin: 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #cccccc;
+  font-weight: 600;
+}
+.edit-profile p {
+  margin: 0;
+  display: inline;
+  font-weight: 500;
+}
+.edit-profile p:hover {
+  background: #cccccc;
+}
+
+/* NOTIFICATIONS */
+.notifications {
+  margin-bottom: 50px;
+}
+.notifications p {
+  padding: 5px;
+}
+
+.notifications p:hover {
+  background: white;
+}
+
+.grid {
+  width: 300px;
+  margin: 0px auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.box {
+  align-self: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 0px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(to right, #f7858a, #f7b985);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* SAVE BUTTON */
+.save-button p {
+  background-image: linear-gradient(to right, #f7858a, #f7b985);
+  padding: 10px 70px 10px 70px;
+  display: inline;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.save-button p:hover {
+  background-image: none;
+  background-color: #cccccc;
+  cursor: pointer;
+}
